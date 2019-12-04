@@ -32,19 +32,6 @@ time.sleep(7) #sonuçlara göz atabilmek için kısa süreliğine programı durd
 time.sleep(7)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 def dnsrecon(): #dnsrecon adında bir metod oluşturduk.
 print ("dnsreceon basliyor") #Programın calısma bilgisini kullanıcıya verdik
 print ("------------------")
