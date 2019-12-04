@@ -42,9 +42,6 @@ def robotbul():
         
 #robotbul()
 
-
-
-
 # Reverse IP Lookup bebegim 200 --> OK
 def tersine_moah():
     os.system("wget http://api.hackertarget.com/reverseiplookup/?q=" + d4 )
@@ -97,7 +94,7 @@ print ("-----------------")
 #time.sleep(2)
 
 
-#timeour hatası veriyor düzeltilmedi
+#timeout hatası veriyor düzeltilmedi. subproccess bak
 
 
 
