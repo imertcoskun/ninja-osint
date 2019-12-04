@@ -1,6 +1,7 @@
 
 # giriste soracaksin. Aktif bilgi toplamak mi istersin pasif bilgi toplamak mi cocuk adam diye?
 # ona gore de gidis yolu cizeceksin aktif icin:9 pasif icin:5 daha sonrasinda listeleyerek devam edeceksin
+#Bu first kızım olup kod "200" olanlar belirtilmistir
 import os
 import subprocess
 #from domaintools import API
