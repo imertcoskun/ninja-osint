@@ -11,14 +11,14 @@ import nmap
 d4 = input("arguman gir ...") 
 
 # robots.txt dosyasi 200 -->OK
-def robotbul(): #robotbul metodumuzu oluşturduk.
+def robotbul(): #robotbul metodumuzu olusturduk.
 print ("ROBOTS.TXT dosyasi bulunuyor---------") 
 result = os.popen("curl https://"+d4+"/robots.txt").read() 
 result_data_set = {"Disallowed":[], "Allowed":[]} 
 print ("robots txt bulundu----------")
 print ("-----------------------------------")
 
-for line in result.split("\n"): #bulunan sonucu sonuç sayısı kadar bölüyoruz
+for line in result.split("\n"): #bulunan sonucu sonuc sayısı kadar boluyoruz
 	if line.startswith('Allow'):   
 	result_data_set["Allowed"].append(line.split(': ')[1].split(' ')[0])  
 	elif line.startswith('Disallow'):    
@@ -35,18 +35,13 @@ def dnsrecon():
 print ("dnsreceon basliyor") #Programın calısma bilgisini kullanıcıya verdik
 print ("------------------")
 time.sleep(3) 
-dnsistek = "-d" #dnsrecon aracında tarama parametresi "-d" olarak kullanılır. Program çalışma sürecinde bir hata çıkmasını engellemek için tanımlanmıştır.
+dnsistek = "-d" #dnsrecon aracında tarama parametresi "-d" olarak kullanılır. Program calisma sürecinde bir hata cikmasini engellemek için tanımlanmıştır.
 sonuc = subprocess.call(['dnsreceon', dnsistek+d4]) 
 print ("dns recon taramasi tamamlandi...") 
 print ("---------------------------------")
 print (sonuc) #sonucu ekrana yazdırdık.
 dnsrecon()
 time.sleep(4) 
-
-
-
-
-
 
 
 # traceroute OK -->200
